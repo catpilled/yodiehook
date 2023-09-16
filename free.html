@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Scripts</title>
+    
+    <!-- Include the CSS for the dark mode -->
+    <link rel="stylesheet" href="prism.css">
+
+    <!-- Include the Prism.js library -->
+    <script src="prism.js" defer></script>
+    <!-- Include the Lua language support -->
+    <script src="prism-lua.js" defer></script>
+</head>
+<body class="dark">
+    <!-- Container for Lua code with a rainbow border -->
+    <div class="lua-container">
+        <pre>
+            <code class="language-lua">
+                local sv_cheats_cvar = GetConVar("sv_cheats")
+                    sv_cheats_cvar:SetInt(1)
+                    
+                    
+                    
+                    
+                    
+            </code>
+        </pre>
+    </div>
+    
+    <style>
+        /* Dark mode CSS */
+        body.dark {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Rainbow border around the Lua code container */
+        .lua-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+            background-size: 600% 600%;
+            animation: rainbow-border 5s linear infinite;
+            border: 2px solid transparent;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Ensure text inside the code container is visible */
+        .lua-container code {
+            color: white;
+        }
+
+        /* Rainbow border animation */
+        @keyframes rainbow-border {
+            0% {
+                background-position: 0 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</body>
+</html>

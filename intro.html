@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .glow-text {
+            font-size: 60px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out, glowing 2s infinite 2s;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowing {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                             0 0 20px rgba(255, 255, 255, 0.7),
+                             0 0 30px rgba(255, 255, 255, 0.7);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.9),
+                             0 0 30px rgba(255, 255, 255, 0.9),
+                             0 0 40px rgba(255, 255, 255, 0.9);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                             0 0 20px rgba(255, 255, 255, 0.7),
+                             0 0 30px rgba(255, 255, 255, 0.7);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-text">YodieHook</div>
+</body>
+</html>

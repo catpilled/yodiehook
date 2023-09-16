@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YodieFlare</title>
+    <style>
+        /* Loading animation container styles */
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #121212; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; /* Dark background color */
+        }
+
+        /* YodieFlare text styles */
+        .yodieflare-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff; /* Light text color */
+            margin-bottom: 20px;
+        }
+
+        /* Rainbow progress bar styles */
+        .loading-progress-bar {
+            width: 100px;
+            height: 10px;
+            background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            background-size: 600% 100%;
+            animation: rainbow-progress 3s linear infinite;
+        }
+
+        @keyframes rainbow-progress {
+            0% {
+                background-position: 0% 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="yodieflare-text">YodieFlare</div>
+        <div class="loading-progress-bar"></div>
+    </div>
+    <script>
+        // Simulate loading by delaying page transition
+        setTimeout(function() {
+            window.location.href = "main.html"; // Redirect to the main page
+        }, 3000); // Adjust the delay time (in milliseconds) as needed
+    </script>
+</body>
+</html>
